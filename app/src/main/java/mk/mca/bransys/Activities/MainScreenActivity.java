@@ -58,7 +58,7 @@ public class MainScreenActivity extends AppCompatActivity {
         setContentView(R.layout.main_screen_activity);
         final SharedPreferences sheredpref = getSharedPreferences("sharedpref", Context.MODE_PRIVATE);
         time = 0;
-        time = (sheredpref.getInt("time", 0)) * 600;
+        time = (sheredpref.getInt("time", 0)) * 60000;
         final Integer firstTime = sheredpref.getInt("frst", 0);
 
         progressDoalog = new ProgressDialog(MainScreenActivity.this);
